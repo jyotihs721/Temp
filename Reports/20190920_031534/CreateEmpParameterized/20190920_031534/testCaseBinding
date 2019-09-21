@@ -1,0 +1,3 @@
+{"testCaseName":"Test Cases/DummyEmp/CreateEmpGetEmp - Parameterized - Iteration 1","testCaseId":"Test Cases/DummyEmp/CreateEmpGetEmp - Parameterized","bindedValues":{"salary":"\u002710\u0027","age":"\u00277\u0027"}}
+{"testCaseName":"Test Cases/DummyEmp/CreateEmpGetEmp - Parameterized - Iteration 2","testCaseId":"Test Cases/DummyEmp/CreateEmpGetEmp - Parameterized","bindedValues":{"salary":"\u002716\u0027","age":"\u00276\u0027"}}
+{"testCaseName":"Test Cases/DummyEmp/CreateEmpGetEmp - Parameterized - Iteration 3","testCaseId":"Test Cases/DummyEmp/CreateEmpGetEmp - Parameterized","bindedValues":{"salary":"\u002715\u0027","age":"\u00274\u0027"}}

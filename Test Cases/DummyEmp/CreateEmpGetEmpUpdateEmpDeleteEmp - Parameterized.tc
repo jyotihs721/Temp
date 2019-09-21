@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CreateEmpGetEmpUpdateEmpDeleteEmp - Parameterized</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ffaa0698-9c49-4380-9bb3-c3214b2f884a</testCaseGuid>
+   <variable>
+      <defaultValue>'19'</defaultValue>
+      <description></description>
+      <id>ec70ef3d-c0de-447d-a2ad-280131ec2a62</id>
+      <masked>false</masked>
+      <name>salary</name>
+   </variable>
+   <variable>
+      <defaultValue>'7'</defaultValue>
+      <description></description>
+      <id>f9447d3d-ed50-429f-b6b4-9e1cad0a793a</id>
+      <masked>false</masked>
+      <name>age</name>
+   </variable>
+</TestCaseEntity>

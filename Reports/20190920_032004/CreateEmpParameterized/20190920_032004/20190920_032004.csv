@@ -1,0 +1,77 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+CreateEmpParameterized,,,,2019-09-20 03:20:18,2019-09-20 03:20:28,9.781s,INCOMPLETE
+,,,,,,,
+Test Cases/DummyEmp/CreateEmpGetEmp - Parameterized,,,,2019-09-20 03:20:18,2019-09-20 03:20:23,4.727s,PASSED
+date = new java.util.Date(),,,,2019-09-20 03:20:19,2019-09-20 03:20:19,0.016s,PASSED
+datevalue = date.toString(),,,,2019-09-20 03:20:19,2019-09-20 03:20:19,0.001s,PASSED
+"datevalue = datevalue.replace("" "", """")",,,,2019-09-20 03:20:19,2019-09-20 03:20:19,0.012s,PASSED
+"datevalue = datevalue.replace("":"", """")",,,,2019-09-20 03:20:19,2019-09-20 03:20:19,0.000s,PASSED
+println(datevalue),,,,2019-09-20 03:20:19,2019-09-20 03:20:19,0.000s,PASSED
+EmpName = datevalue,,,,2019-09-20 03:20:19,2019-09-20 03:20:19,0.193s,PASSED
+println(EmpName),,,,2019-09-20 03:20:19,2019-09-20 03:20:19,0.005s,PASSED
+"response = sendRequestAndVerify(findTestObject(""DummyEmployee/Obj_CreateEmpGetEmp - Paremeterized"", [""EmpName"":datevalue, ""salary"":salary, ""age"":age]))",,,,2019-09-20 03:20:19,2019-09-20 03:20:22,2.848s,PASSED
+println(response.getResponseBodyContent()),,,,2019-09-20 03:20:22,2019-09-20 03:20:22,0.000s,PASSED
+responseText = response.getResponseBodyContent(),,,,2019-09-20 03:20:22,2019-09-20 03:20:22,0.000s,PASSED
+"verifyElementPropertyValue(response, ""name"", EmpName)",,,,2019-09-20 03:20:22,2019-09-20 03:20:22,0.102s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2019-09-20 03:20:22,2019-09-20 03:20:22,0.025s,PASSED
+println(response.getResponseBodyContent()),,,,2019-09-20 03:20:22,2019-09-20 03:20:22,0.001s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-20 03:20:22,2019-09-20 03:20:22,0.000s,PASSED
+parsedJson = slurper.parseText(responseText),,,,2019-09-20 03:20:22,2019-09-20 03:20:22,0.000s,PASSED
+idValue = id,,,,2019-09-20 03:20:22,2019-09-20 03:20:22,0.000s,PASSED
+"id = parsedJson.get(""id"")",,,,2019-09-20 03:20:22,2019-09-20 03:20:22,0.002s,PASSED
+println(id),,,,2019-09-20 03:20:22,2019-09-20 03:20:22,0.000s,PASSED
+EmpId = id,,,,2019-09-20 03:20:22,2019-09-20 03:20:22,0.000s,PASSED
+println(EmpId),,,,2019-09-20 03:20:22,2019-09-20 03:20:22,0.015s,PASSED
+"response = sendRequest(findTestObject(""DummyEmployee/Obj_GetEmp""))",,,,2019-09-20 03:20:22,2019-09-20 03:20:23,0.874s,PASSED
+println(response.getResponseBodyContent()),,,,2019-09-20 03:20:23,2019-09-20 03:20:23,0.000s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2019-09-20 03:20:23,2019-09-20 03:20:23,0.016s,PASSED
+,,,,,,,
+Test Cases/DummyEmp/CreateEmpGetEmp - Parameterized,,,,2019-09-20 03:20:23,2019-09-20 03:20:25,2.070s,PASSED
+date = new java.util.Date(),,,,2019-09-20 03:20:23,2019-09-20 03:20:23,0.000s,PASSED
+datevalue = date.toString(),,,,2019-09-20 03:20:23,2019-09-20 03:20:23,0.000s,PASSED
+"datevalue = datevalue.replace("" "", """")",,,,2019-09-20 03:20:23,2019-09-20 03:20:23,0.000s,PASSED
+"datevalue = datevalue.replace("":"", """")",,,,2019-09-20 03:20:23,2019-09-20 03:20:23,0.000s,PASSED
+println(datevalue),,,,2019-09-20 03:20:23,2019-09-20 03:20:23,0.000s,PASSED
+EmpName = datevalue,,,,2019-09-20 03:20:23,2019-09-20 03:20:23,0.000s,PASSED
+println(EmpName),,,,2019-09-20 03:20:23,2019-09-20 03:20:23,0.000s,PASSED
+"response = sendRequestAndVerify(findTestObject(""DummyEmployee/Obj_CreateEmpGetEmp - Paremeterized"", [""EmpName"":datevalue, ""salary"":salary, ""age"":age]))",,,,2019-09-20 03:20:23,2019-09-20 03:20:24,1.168s,PASSED
+println(response.getResponseBodyContent()),,,,2019-09-20 03:20:24,2019-09-20 03:20:24,0.004s,PASSED
+responseText = response.getResponseBodyContent(),,,,2019-09-20 03:20:24,2019-09-20 03:20:24,0.002s,PASSED
+"verifyElementPropertyValue(response, ""name"", EmpName)",,,,2019-09-20 03:20:24,2019-09-20 03:20:24,0.018s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2019-09-20 03:20:24,2019-09-20 03:20:24,0.004s,PASSED
+println(response.getResponseBodyContent()),,,,2019-09-20 03:20:24,2019-09-20 03:20:24,0.003s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-20 03:20:24,2019-09-20 03:20:24,0.001s,PASSED
+parsedJson = slurper.parseText(responseText),,,,2019-09-20 03:20:24,2019-09-20 03:20:24,0.001s,PASSED
+idValue = id,,,,2019-09-20 03:20:24,2019-09-20 03:20:24,0.002s,PASSED
+"id = parsedJson.get(""id"")",,,,2019-09-20 03:20:24,2019-09-20 03:20:24,0.001s,PASSED
+println(id),,,,2019-09-20 03:20:24,2019-09-20 03:20:24,0.002s,PASSED
+EmpId = id,,,,2019-09-20 03:20:24,2019-09-20 03:20:24,0.001s,PASSED
+println(EmpId),,,,2019-09-20 03:20:24,2019-09-20 03:20:24,0.003s,PASSED
+"response = sendRequest(findTestObject(""DummyEmployee/Obj_GetEmp""))",,,,2019-09-20 03:20:24,2019-09-20 03:20:25,0.794s,PASSED
+println(response.getResponseBodyContent()),,,,2019-09-20 03:20:25,2019-09-20 03:20:25,0.002s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2019-09-20 03:20:25,2019-09-20 03:20:25,0.005s,PASSED
+,,,,,,,
+Test Cases/DummyEmp/CreateEmpGetEmp - Parameterized,,,,2019-09-20 03:20:25,2019-09-20 03:20:28,2.502s,PASSED
+date = new java.util.Date(),,,,2019-09-20 03:20:25,2019-09-20 03:20:25,0.001s,PASSED
+datevalue = date.toString(),,,,2019-09-20 03:20:25,2019-09-20 03:20:25,0.002s,PASSED
+"datevalue = datevalue.replace("" "", """")",,,,2019-09-20 03:20:25,2019-09-20 03:20:25,0.003s,PASSED
+"datevalue = datevalue.replace("":"", """")",,,,2019-09-20 03:20:25,2019-09-20 03:20:25,0.001s,PASSED
+println(datevalue),,,,2019-09-20 03:20:25,2019-09-20 03:20:25,0.001s,PASSED
+EmpName = datevalue,,,,2019-09-20 03:20:25,2019-09-20 03:20:25,0.001s,PASSED
+println(EmpName),,,,2019-09-20 03:20:25,2019-09-20 03:20:25,0.001s,PASSED
+"response = sendRequestAndVerify(findTestObject(""DummyEmployee/Obj_CreateEmpGetEmp - Paremeterized"", [""EmpName"":datevalue, ""salary"":salary, ""age"":age]))",,,,2019-09-20 03:20:25,2019-09-20 03:20:26,1.089s,PASSED
+println(response.getResponseBodyContent()),,,,2019-09-20 03:20:26,2019-09-20 03:20:26,0.001s,PASSED
+responseText = response.getResponseBodyContent(),,,,2019-09-20 03:20:26,2019-09-20 03:20:26,0.000s,PASSED
+"verifyElementPropertyValue(response, ""name"", EmpName)",,,,2019-09-20 03:20:26,2019-09-20 03:20:26,0.016s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2019-09-20 03:20:26,2019-09-20 03:20:26,0.003s,PASSED
+println(response.getResponseBodyContent()),,,,2019-09-20 03:20:26,2019-09-20 03:20:26,0.000s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2019-09-20 03:20:26,2019-09-20 03:20:26,0.000s,PASSED
+parsedJson = slurper.parseText(responseText),,,,2019-09-20 03:20:26,2019-09-20 03:20:26,0.000s,PASSED
+idValue = id,,,,2019-09-20 03:20:26,2019-09-20 03:20:26,0.000s,PASSED
+"id = parsedJson.get(""id"")",,,,2019-09-20 03:20:26,2019-09-20 03:20:26,0.001s,PASSED
+println(id),,,,2019-09-20 03:20:26,2019-09-20 03:20:26,0.001s,PASSED
+EmpId = id,,,,2019-09-20 03:20:26,2019-09-20 03:20:26,0.001s,PASSED
+println(EmpId),,,,2019-09-20 03:20:26,2019-09-20 03:20:26,0.002s,PASSED
+"response = sendRequest(findTestObject(""DummyEmployee/Obj_GetEmp""))",,,,2019-09-20 03:20:26,2019-09-20 03:20:28,1.351s,PASSED
+println(response.getResponseBodyContent()),,,,2019-09-20 03:20:28,2019-09-20 03:20:28,0.000s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2019-09-20 03:20:28,2019-09-20 03:20:28,0.000s,PASSED
